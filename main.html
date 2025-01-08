@@ -1,52 +1,49 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-  <form method="post">
-	<label for="name">Name</label>
-	<input type="text" id="name" required> <br>
+    <!-- the entire body must be written by student -->
+    <form method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" required><br>
 
-	<label for="email">Email</label>
-	<input type="email" id="name" required<br>
+        <!-- Corrected 'id' for email input field -->
+        <label for="email">Email</label>
+        <input type="email" id="email" required><br> <!-- Corrected id to 'email' -->
 
-	<label for="gender">Gender</label>
-	<input type="radio" name="gender" value="male" required>M
-	<input type="radio" name="gender" value="female" ><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male" required> M
+        <input type="radio" name="gender" value="female"> F<br>
 
-	<label for="laptop">Laptop Brands</label> <br>
-	<select id="laptop" multiple>
-		<option value="">-- select--</option>
-		<option value="Apple">Apple</option>
-    	<option value="Asus">Asus</option>
-		<option value="HP">HP</option>
-	</select><br>
-	  
+        <label for="laptop">Laptop Brands</label><br>
+        <select id="laptop" multiple>
+            <option value="">-- select --</option>
+            <option value="Apple">Apple</option>
+            <option value="Asus">Asus</option>
+            <option value="HP">HP</option>
+        </select><br>
 
-	<label for="age">Age</label>
-	<input type="number" id="age" required><br>
+        <label for="age">Age</label>
+        <input type="number" id="age" required><br>
 
-	<label for="dob">Date of Birth</label>
-	<input type="date" id="dob" required><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required><br>
 
-	<label for="password">Password</label>
-	<input type="password" id="password" required><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" required><br>
 
-	<label for="portfolio">Portfolio URL</label>
-	<a href="https://www.youtube.com/watch?v=8FgQjlDDmO8&list=RD8FgQjlDDmO8&start_radio=1">portfolio</a>
-   <br>
-	 <input type="submit" >
-	
-</form>
-		
- 	
-    <script type="text/javascript" src="./script.js">
-</script>
+        <label for="portfolio">Portfolio URL</label>
+        <input type="url" id="portfolio" required><br> <!-- Added 'input[type="url"]' with 'id="portfolio"' -->
+        <a href="https://www.youtube.com/watch?v=8FgQjlDDmO8&list=RD8FgQjlDDmO8&start_radio=1" target="_blank">portfolio</a><br>
+
+        <input type="submit">
+    </form>
+
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
 
